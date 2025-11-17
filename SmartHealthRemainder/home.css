@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eef3ff;
+    display: flex;
+    justify-content: center;
+}
+
+.app-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    padding: 15px;
+}
+
+.navbar {
+    background: #2e62ff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: block;
+}
+
+.nav-links li a.active {
+    background: white;
+    color: #2e62ff;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 4px 0;
+    border-radius: 3px;
+}
+
+@media (max-width: 1200px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #2e62ff;
+        padding: 15px;
+        border-radius: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 160px;
+        z-index: 100;
+        gap: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .nav-links li a.active {
+        background: none;
+        color: white;
+    }
+}
+
+.page {
+    display: none;
+    padding: 25px 20px;
+    background: #f8faff;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+.page-active {
+    display: block;
+}
+
+.page h2 {
+    font-size: 24px;
+    color: #2e62ff;
+    margin-bottom: 8px;
+}
+
+.page p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.page ul {
+    margin-top: 10px;
+    padding-left: 18px;
+}
+
+.page ul li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
