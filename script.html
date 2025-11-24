@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Epic Adventures</title>
+
+<style>
+body {
+    background: pink;
+    text-align: center;
+}
+
+h1 {
+    color: ivory;
+    margin-top: 20px;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 20px auto;
+    padding: 25px;
+    width: 400px;
+    color: white;
+}
+
+.box1 { background: purple; }
+.box2 { background: orange; }
+.box3 { background: teal; }
+.box4 { background: green; }
+.box5 { background: brown; }
+.box6 { background: grey;}
+.box7 { background: mediumpurple;}
+.box8 { background: olivedrab;}
+.box9 { background: chocolate;}
+.box10 { background: navy;}
+
+.btn {
+    background: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #ffeb3b;
+    transform: scale(1.05);
+}
+
+img {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    margin: 15px auto 0;
+    object-fit: contain;
+}
+</style>
+</head>
+
+<body>
+<h1>Epic Adventures</h1>
+
+<div class="box box1">
+    <p id="text1">Courage is not the absence of fear, but the triumph over it.</p>
+    <button class="btn" onclick="Text1(this)">Update Text</button>
+</div>
+
+<div class="box box2">
+    <p id="text2" style="display:none;">Plan your journey carefully, but don’t forget to explore the unknown!</p>
+    <button class="btn" onclick="Text2(this)">Reveal Text</button>
+</div>
+
+<div class="box box3">
+    <img id="myImage" src="images/1.jpg" alt="">
+    <br>
+    <button class="btn" onclick="Image(this)">Change Image</button>
+</div>
+
+<div class="box box4" id="bgBox">
+    <p>Click button to change background</p>
+    <button class="btn" onclick="Background(this)">Change BG</button>
+</div>
+
+<div class="box box5">
+    <p id="contentBox">Strong</p>
+    <button class="btn" onclick="toggleContent(this)">Toggle Text</button>
+</div>
+
+<div class="box box6">
+    <p id="Uttam">Calculate</p>
+    <button class="btn" onclick="Calculate(this)">Add</button>
+</div>
+
+<div class="box box7">
+    <p id="Susman">Calculate1</p>
+    <button class="btn" onclick="Calculate1(this)">Subtraction</button>
+</div>
+
+<div class="box box8">
+    <p id="Udhav">Calculate2</p>
+    <button class="btn" onclick="Calculate2(this)">Multiplication</button>
+</div>
+
+<div class="box box9">
+    <p id="Amit">Calculate3</p>
+    <button class="btn" onclick="Calculate3(this)">Division</button>
+</div>
+
+<div class="box box10">
+    <p id="Bibek">Check your age status</p>
+    <button class="btn" onclick="checkAge(this)">Check Age</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
