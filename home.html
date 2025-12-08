@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Firebase CRUD </title>
+  <style>
+    body { 
+      font-family: Arial; 
+      margin: 20px; }
+    input { 
+      padding: 8px; 
+      margin-right: 10px; }
+    table { 
+      width: 60%; 
+      border-collapse: collapse; 
+      margin-top: 20px; }
+    th, td { 
+      padding: 10px; 
+      border: 1px solid #ccc; 
+      text-align: left; }
+    button { 
+      padding: 6px 12px; 
+      cursor: pointer; }
+  </style>
+</head>
+
+<body>
+
+  <h2>Firebase CRUD – Name & Email</h2>
+
+  <input type="text" id="nameInput" placeholder="Enter Name">
+  <input type="email" id="emailInput" placeholder="Enter Email">
+  <button id="addBtn">Add User</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <!-- Load JS as module -->
+  <script type="module" src="home.js"></script>
+
+</body>
+</html>
